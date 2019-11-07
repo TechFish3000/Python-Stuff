@@ -2,23 +2,23 @@
 
 
 import random
-strig = ""
-nums = open("nums.txt", "w")
-numlist: set = {"", }
-many = int(input("How many?"))
-r = int(input("Range start?"))
-s = int(input("range stop?"))
-numlist.clear()
-while len(numlist) != many:
-    numlist.add(random.randrange(r, s))
+EndString = ""
+NumberFile = open("nums.txt", "w")
+NumList: set = {"", }
+Count = int(input("Amount of unique numbers?"))
+RangeStart = int(input("Range starting point?"))
+RangeStop = int(input("Range stopping point?"))
+NumList.clear()
+while len(NumList) != Count:
+    NumList.add(random.randrange(RangeStart, RangeStop))
 
-for i in numlist:
-    strig = strig + "\n" + str(i)
-
-
+for i in NumList:
+    EndString = EndString + "\n" + str(i)
 
 
-nums.write(strig)
-nums.close()
+
+
+NumberFile.write(EndString)
+NumberFile.close()
 
 
