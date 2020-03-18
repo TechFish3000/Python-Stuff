@@ -1,3 +1,6 @@
+
+# Open-source, you can use it, i guess.
+
 cols = int(input("How many columns?"))
 entries = 0
 headings = []
